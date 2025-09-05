@@ -1,0 +1,306 @@
+// Define a type for a single feature for better type-safety
+export type ProductFeature = {
+  category: string;
+  name: string;
+  simple: boolean;
+  pro: boolean;
+  premium: boolean;
+  info?: string; // The info property is optional
+};
+
+// Export the array of features
+export const productFeatures : ProductFeature[] = [
+    {
+      category: 'Backend',
+      name: 'Arquitectura modular estándar.',
+      simple: true,
+      pro: true,
+      premium: true,
+      info: 'Una estructura base sólida y organizada, ideal para proyectos pequeños y medianos.'
+    },
+    {
+      category: 'Backend',
+      name: 'Arquitectura Limpia (Clean Architecture).',
+      simple: false,
+      pro: true,
+      premium: true,
+      info: 'Separa las preocupaciones en capas (Entidades, Casos de Uso, Controladores, etc.) para un sistema más mantenible y escalable.'
+    },
+    {
+      category: 'Backend',
+      name: 'Sistema de Autorización por Roles y Permisos (RBAC).',
+      simple: false,
+      pro: false,
+      premium: true,
+      info: 'Control de acceso granular que permite definir qué acciones puede realizar cada rol de usuario en la aplicación.'
+    },
+    {
+      category: 'Backend',
+      name: 'Autenticación con Email/Contraseña.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Autenticación social (Google y Microsoft).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Autenticación de Dos Factores (2FA/MFA).',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Controladores RESTful estándar.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Flujos de "Olvidé mi contraseña" y "Verificación de email".',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Soporte completo para White Label (marca blanca configurable por API).',
+      simple: false,
+      pro: false,
+      premium: true,
+      info: 'Permite personalizar la apariencia (logos, colores) de la aplicación para diferentes clientes a través de una API.'
+    },
+    {
+      category: 'Backend',
+      name: 'Configuración de ORM (Prisma o similar).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'API con Paginación, Ordenamiento y Filtrado.',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Abstracción de servicios (ej. cambiar de proveedor de email fácilmente).',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Sistema de Migraciones y Seeding.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Respuestas de API estandarizadas.',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Logging estructurado y avanzado.',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Envío de emails transaccionales básicos (un proveedor, plantillas simples).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Dockerización completa del entorno (Docker Compose).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: '(Opcional, como add-on) Arquitectura Multi-tenant.',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Configuración con variables de entorno (.env).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Sistema de colas (Queue) para tareas en segundo plano (ej. envío de emails).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Configuración de Testing (Jest).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Backend',
+      name: 'Generación de documentación de API (Swagger/OpenAPI).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Estructura de proyecto con Vite y TypeScript.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Sistema de Theming avanzado para White Label.',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Librería de UI (Tailwind CSS).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Storybook para desarrollo y documentación de componentes.',
+      simple: false,
+      pro: false,
+      premium: true,
+      info: 'Herramienta para desarrollar componentes de UI en aislamiento, facilitando la creación de una librería de componentes robusta y documentada.'
+    },
+    {
+      category: 'Frontend',
+      name: 'Componentes de UI básicos (Button, Input, Modal).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Tests de componentes más completos (React Testing Library).',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Páginas: Login, Registro, Perfil simple.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Manejo de estado de servidor (React Query).',
+      simple: false,
+      pro: true,
+      premium: true,
+      info: 'Gestiona el fetching, caching, sincronización y actualización del estado del servidor, simplificando la lógica de datos.'
+    },
+    {
+      category: 'Frontend',
+      name: 'Layouts avanzados (ej. Dashboard de Admin pre-construido).',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Manejo de estado global simple (Zustand).',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Componentes avanzados (DataTable con paginación, FileUpload).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Editor de texto enriquecido (Rich Text Editor).',
+      simple: false,
+      pro: false,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Sistema de rutas protegidas.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Sistema de notificaciones (Toasts/Snackbars).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Instancia de Axios configurada.',
+      simple: true,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Formularios avanzados con validación (React Hook Form).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Soporte para Modo Claro / Modo Oscuro.',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Configuración de Linting y Formatting (ESLint + Prettier).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+    {
+      category: 'Frontend',
+      name: 'Configuración base para CI/CD (GitHub Actions).',
+      simple: false,
+      pro: true,
+      premium: true,
+    },
+  ];
