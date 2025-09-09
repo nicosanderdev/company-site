@@ -7,6 +7,8 @@ import MainHeader from './components/layout/MainHeader'
 import MainFooter from './components/layout/MainFooter'
 import { ThemeProvider } from './context/ThemeContext'
 import { ThemeInit } from '../.flowbite-react/init';
+import Blog from './pages/Blog'
+import BlogArticles from './pages/BlogArticles'
 
 function App() {
 
@@ -19,7 +21,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/detailed-products" element={<FullPricePage />} />
-
+          <Route path="/blog" element={<BlogArticles />} />
+          <Route path="/blog/:articleId" element={<Blog />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <MainFooter />

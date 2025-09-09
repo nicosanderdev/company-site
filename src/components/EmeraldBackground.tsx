@@ -5,7 +5,7 @@ export default function EmeraldBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden bg-emerald-50 dark:bg-gray-900">
 
-      {/* === Glowing Blobs (Clouds) === */}
+      {/* === Clouds === */}
       {[...Array(10)].map((_, i) => {
         const positions = [
           { top: "25%", left: "20%" },
@@ -17,10 +17,9 @@ export default function EmeraldBackground() {
         const pos = positions[i % positions.length];
         const size = 100 + i * 16;
 
-        // Generate random travel distances for each blob
-        const randomX = (Math.random() - 0.5) * 600; // Random value between -300 and 300
-        const randomY = (Math.random() - 0.5) * 600; // Random value between -300 and 300
-        const randomDuration = 20 + Math.random() * 30; // Random duration between 20s and 50s
+        const randomX = (Math.random() - 0.5) * 600;
+        const randomY = (Math.random() - 0.5) * 600;
+        const randomDuration = 20 + Math.random() * 30;
 
         return (
           <motion.div
@@ -45,15 +44,7 @@ export default function EmeraldBackground() {
         );
       })}
 
-      {/* === Rotating Subtle Shapes === 
-      <motion.div
-        animate={{ rotate: 360, scale: 1.5 }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-        className="absolute top-1/2 left-1/2 w-[40rem] h-[40rem] -translate-x-1/2 -translate-y-1/2
-                   rounded-full border-4 border-emerald-500/10 dark:border-gray-300/10"
-      />*/}
-
-      {/* === Floating Particles === */}
+      {/* === Particles === */}
       {[...Array(40)].map((_, i) => (
         <motion.div
           key={i}
