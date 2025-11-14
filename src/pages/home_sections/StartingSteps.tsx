@@ -28,7 +28,7 @@ export default function StartingSteps() {
   ];
 
   return (
-    <section className="bg-transparent dark:bg-gray-900">
+    <section>
       <div className="max-w-xl px-4 py-16 mx-auto">
         <SectionHeader>Cómo trabajo</SectionHeader>
 

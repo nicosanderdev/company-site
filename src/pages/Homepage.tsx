@@ -1,3 +1,4 @@
+import EmeraldBackground from "../components/EmeraldBackground";
 import CallToAction from "./home_sections/CallToAction";
 import ContactForm from "./home_sections/ContactForm";
 import FaQ from "./home_sections/FaQ";
@@ -12,10 +13,18 @@ export function Homepage() {
     <>
       <Hero />
       <MyServices />
-      <StartingSteps />
+
+      <EmeraldBackground className="bg-transparent">
+        <StartingSteps />
+      </EmeraldBackground>
+
       <FeatureSection />
       <FaQ />
-      <Pricing />
+      
+      <EmeraldBackground className="bg-transparent">
+        <Pricing />
+      </EmeraldBackground>
+
       <CallToAction />
       <ContactForm />
     </>

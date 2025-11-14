@@ -24,7 +24,7 @@ export default function MyServices() {
 
   return (
     <>
-      <section className="bg-emerald-300 dark:bg-gray-800">
+      <section id="my-services" className="bg-emerald-300 dark:bg-gray-800">
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
           <div className="place-self-center text-center">
             <SectionHeader>
@@ -38,7 +38,7 @@ export default function MyServices() {
             
             {services.map((service, index) => (
               <div key={index}>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-500">
                   {service.icon}
                 </div>
                 <h3 className="mb-2 text-xl font-bold dark:text-white">

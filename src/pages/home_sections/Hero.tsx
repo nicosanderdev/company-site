@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export default function Hero() {
   return (
-    <section className="bg-emerald-50 dark:bg-gray-900">
+    <section id="hero" className="bg-emerald-50 dark:bg-gray-900">
       <div className="grid max-w-screen-xl px-4 py-16 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
         {/* Left side: Text */}
         <motion.div

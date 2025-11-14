@@ -4,7 +4,7 @@ import { SectionHeader } from "../../components/SectionHeader";
 export default function CallToAction() {
   return (
     <>
-      <section className=" bg-transparent ">
+      <section className="dark:bg-gray-800 bg-emerald-300">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center">
             <SectionHeader>

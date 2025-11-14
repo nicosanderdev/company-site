@@ -1,12 +1,11 @@
 export interface BlogArticle {
-  id: string;
-  title: string;
-  content: string;
-  excerpt: string;
-  author: string;
-  publishedAt: string;
-  tags: string[];
-  featuredImage?: string;
+    id: number;
+    created_at: Date;
+    title: string;
+    content: string;
+    slug: string;
+    authorId: string;
+    is_published: boolean;
 }
 
 export interface BlogArticleMetadata {
@@ -17,4 +16,14 @@ export interface BlogArticleMetadata {
   publishedAt: string;
   tags: string[];
   featuredImage?: string;
+}
+
+export interface Comment {
+    id: number;
+    created_at: Date;
+    content: string;
+    username: string;
+    email: string;
+    postId: number;
+    userId: string;
 }

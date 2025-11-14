@@ -12,15 +12,11 @@ export default function MainHeader() {
         <CustomDarkThemeToggle />
         <NavbarToggle />
         <NavbarCollapse>
-          <NavbarLink href="#" active>
-            Home
-          </NavbarLink>
-          <NavbarLink href="#">
-            About
-          </NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
+          <NavbarLink href="/#hero" active>Home</NavbarLink>
+          <NavbarLink href="/#my-services">Services</NavbarLink>
+          <NavbarLink href="/#pricing">Pricing</NavbarLink>
+          <NavbarLink href="/#contact">Contact</NavbarLink>
+          <NavbarLink href="/blog">Blog</NavbarLink>
         </NavbarCollapse>
       </Navbar>
     </div>

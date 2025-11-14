@@ -42,12 +42,11 @@ export default function MainFooter() {
     <>
       <div className="grid grid-cols-12 w-full dark:bg-gray-800 bg-white px-4 md:px-0">
         <Footer className="col-span-12 md:col-span-8 md:col-start-3 shadow-none" container theme={footerTheme}>
-          <FooterCopyright theme={footerTheme.copyright} href="#" by="Flowbite™" year={2025} />
+          <FooterCopyright theme={footerTheme.copyright} href="#" by="Developer™" year={2025} />
           <FooterLinkGroup theme={footerTheme.groupLink}>
-            <FooterLink theme={footerTheme.groupLink.link} href="#">About</FooterLink>
-            <FooterLink theme={footerTheme.groupLink.link} href="#">Privacy Policy</FooterLink>
+            {/* <FooterLink theme={footerTheme.groupLink.link} href="#">Privacy Policy</FooterLink>
             <FooterLink theme={footerTheme.groupLink.link} href="#">Licensing</FooterLink>
-            <FooterLink theme={footerTheme.groupLink.link} href="#">Contact</FooterLink>
+            <FooterLink theme={footerTheme.groupLink.link} href="#">Contact</FooterLink> */}
           </FooterLinkGroup>
         </Footer>
       </div>

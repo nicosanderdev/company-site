@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "flowbite-react";
 import { SectionHeader } from "../../components/SectionHeader";
 import { SectionSubtitle } from "../../components/SectionSubtitle";
-import { contactService } from "../../services/ContactService";
+import contactService from "../../services/ContactService";
 import type { ContactFormData, ContactFormError } from "../../types/ContactForm";
 
 export default function ContactForm() {
@@ -44,7 +44,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <section className="bg-white dark:bg-gray-800">
+      <section id="contact" className="bg-white dark:bg-gray-800">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <SectionHeader>
             Contactanos
