@@ -20,11 +20,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Soluciones web modernas con{" "}
+            Soluciones web{" "}
             <span className="bg-gradient-to-r from-emerald-500 to-teal-400 bg-clip-text text-transparent">
-              ASP.NET
+            modernas
             </span>{" "}
-            y React
           </motion.h1>
 
           <motion.p
@@ -33,7 +32,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Construyo aplicaciones escalables y rápidas para empresas y
+            Construyo aplicaciones web escalables y rápidas para empresas y
             emprendedores que necesitan resultados confiables.
           </motion.p>
 
@@ -47,7 +46,7 @@ export default function Hero() {
               size="lg"
               className="bg-emerald-600 hover:bg-emerald-700 text-white transition-transform transform hover:scale-105"
             >
-              Solicitar una reunión
+              Hablá conmigo
             </Button>
             <Button
               size="lg"

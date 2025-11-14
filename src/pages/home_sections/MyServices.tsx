@@ -17,7 +17,7 @@ export default function MyServices() {
     },
     {
       icon: <ChartNoAxesCombined size={36} strokeWidth={2} />,
-      title: "Escalabilidad asegurada",
+      title: "Escalabilidad asegurada con ASP.NET",
       text: "Desde soluciones pequeñas hasta sistemas empresariales con miles de usuarios concurrentes."
     }
   ]
@@ -28,10 +28,10 @@ export default function MyServices() {
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
           <div className="place-self-center text-center">
             <SectionHeader>
-              Desarrollo a medida con ASP.NET + PostgreSQL
+              Desarrollo a medida
             </SectionHeader>
             <SectionSubtitle>
-              Para empresas que necesitan aplicaciones robustas, con multitenancy, procesos complejos, tareas programadas, seguridad avanzada e integraciones API.
+              Elegí el trayecto que se ajuste a tus necesidades
             </SectionSubtitle>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

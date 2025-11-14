@@ -19,7 +19,7 @@ function App() {
         <div className="text-gray-900 dark:text-white">
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/detailed-products" element={<FullPricePage />} />
+            {/* <Route path="/detailed-products" element={<FullPricePage />} /> */}
             <Route path="/blog" element={<BlogArticles />} />
             <Route path="/blog/:articleId" element={<Blog />} />
             <Route path="*" element={<Navigate to="/" />} />

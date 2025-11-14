@@ -7,20 +7,20 @@ export default function FeatureSection() {
   const features = [
     {
       icon: <CheckCircle className="w-6 h-6 text-primary-600 dark:text-primary-500" />,
-      title: "Calidad Garantizada",
-      description: "Nuestros productos pasan por rigurosas pruebas para asegurar la excelencia.",
+      title: "Soporte Continuo",
+      description: "Respuestas rápidas y asistencia personalizada para resolver dudas, incidencias o ajustes menores cuando los necesites.",
       link: "#", // Enlace de "Leer más"
     },
     {
       icon: <Award className="w-6 h-6 text-primary-600 dark:text-primary-500" />,
-      title: "Soporte Premium",
-      description: "Acceso a nuestro equipo de expertos 24/7 para cualquier consulta.",
+      title: "Mantenimiento Preventivo",
+      description: "Actualizaciones periódicas, optimización del rendimiento y controles de seguridad para evitar problemas antes de que aparezcan.",
       link: "#",
     },
     {
       icon: <Globe className="w-6 h-6 text-primary-600 dark:text-primary-500" />,
-      title: "Soluciones Globales",
-      description: "Diseñado para escalar y funcionar en cualquier parte del mundo.",
+      title: "Acompañamiento Estratégico",
+      description: "Revisiones periódicas, recomendaciones de mejora y guía en decisiones tecnológicas que impactan en tu negocio.",
       link: "#",
     },
   ];
@@ -41,12 +41,11 @@ export default function FeatureSection() {
         <div className="mt-8 lg:mt-0">
           {/* Título y Descripción principal */}
           <SectionHeader>
-            Transformamos tus ideas en realidad digital
+            Acompañamiento Profesional para tu Negocio Digital
           </SectionHeader>
           
           <SectionSubtitle>
-            Enfocados en la innovación y la eficiencia, nuestro equipo te acompaña en cada paso del
-            desarrollo para asegurar que tus proyectos no solo cumplan, sino superen tus expectativas.
+            No solo desarrollo software: te ayudo a que tu plataforma funcione siempre de manera estable, actualizada y alineada con tus metas. Mi enfoque está en brindarte tranquilidad, continuidad y una experiencia libre de complicaciones técnicas.
           </SectionSubtitle>
 
           {/* Separador */}

@@ -3,8 +3,8 @@ import { Button } from "flowbite-react";
 type PricingCardProps = {
   title: string;
   description: string;
-  price: number;
-  priceSuffix: string;
+  price?: number | undefined;
+  priceSuffix?: string | undefined;
   backendFeatures: string[];
   frontendFeatures: string[];
   buttonText: string;
@@ -59,14 +59,14 @@ export const PricingCard = ({
       <h3 className="mb-4 text-2xl font-semibold">{title}</h3>
       <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">{description}</p>
       <div className="flex justify-center items-baseline my-8">
-        <span className="mr-2 text-5xl font-extrabold">${price}</span>
-        <span className="text-gray-500 dark:text-gray-400">{priceSuffix}</span>
+        {price && <span className="mr-2 text-5xl font-extrabold">${price}</span>}
+        {priceSuffix && <span className="text-gray-500 dark:text-gray-400">{priceSuffix}</span>}
       </div>
       <div className="flex-grow">
         <FeatureSection title="Backend" features={backendFeatures} />
         <FeatureSection title="Frontend" features={frontendFeatures} />
       </div>
-      <Button href="/detailed-products">{buttonText}</Button>
+      <Button href="/#contact">{buttonText}</Button>
     </div>
   );
 };
